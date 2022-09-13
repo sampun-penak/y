@@ -1,20 +1,20 @@
 let fetch = require('node-fetch')
 let teks = 'gcbot'
-let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fetch('https://telegra.ph/file/c6d47e0aa9dca2263bee9.png'+ teks)).buffer(), `
+let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fetch('https://telegra.ph/file/ea65a044c450e8513f09f.jpg'+ teks)).buffer(), `
 
-*𝐇𝐚𝐥𝐨 𝐁𝐚𝐧𝐡 𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐉𝐨𝐢𝐧 && 𝐁𝐚𝐜𝐚 𝐑𝐮𝐥𝐞𝐬❗*
+*𝐇𝐚𝐥𝐨 𝐁𝐚𝐧𝐠 𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐉𝐨𝐢𝐧 && 𝐁𝐚𝐜𝐚 𝐑𝐮𝐥𝐞𝐬❗*
 ╔═══════════════════
-║ _*Group All*_  𝐉𝐚𝐫𝐨𝐭 ×͜×
+║ _*Group All*_  𝐌𝐢𝐦𝐢𝐦 ×͜×
 ╠═══════════════════
-║➸ 𝐆𝐫𝐨𝐮𝐩 𝐁𝐨𝐭 1
-║ https://tinyurl.com/2nchxnpa
-║➸ 𝐆𝐫𝐨𝐮𝐩 𝐁𝐨𝐭 2
-║ https://tinyurl.com/2gptyhqs
+║➸ 𝐆𝐫𝐨𝐮𝐩 𝐁𝐨𝐭
+║ https://tinyurl.com/ymjxfe8b
+║➸ 𝐆𝐫𝐨𝐮𝐩 𝐄𝐝𝐢𝐭𝐢𝐧𝐠
+║ https://tinyurl.com/yc82jst3
 ╚════════════════════
 ╔════════════════════
-║ *Group Random*
+║ *Group Sticker*
 ╠════════════════════
-║https://tinyurl.com/2h6gch82
+║https://tinyurl.com/4czzb8zb
 ╚════════════════════
 ╔════════════════════
 ║ *RULES GROUP BOT*
@@ -29,12 +29,12 @@ let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fe
 ║𝐌𝐚𝐮 𝐒𝐞𝐰𝐚? 𝐊𝐞𝐭𝐢𝐤 .owner
 ╚════════════════════
 ╔════════════════════
-║ *Rules Group F.V*
+║ *Rules Group*
 ╠════════════════════
 ║𝐒𝐚𝐥𝐚𝐦
 ║𝐍𝐞𝐰𝐦𝐞𝐦 𝐖𝐚𝐣𝐢𝐛  𝐈𝐧𝐭𝐫𝐨
 ║𝐍𝐨 𝐬𝐡𝐚𝐫𝐞 𝐋𝐢𝐧𝐤
-║𝐍𝐨 𝐒𝐡𝐚𝐫𝐞 𝐕𝐢𝐫𝐮𝐬 
+║𝐍𝐨 𝐒𝐡𝐚𝐫𝐞 𝐕𝐢𝐫𝐮𝐬
 ║𝐈𝐧𝐭𝐫𝐨 𝐏𝐚𝐤𝐚𝐢 𝐅𝐨𝐭𝐨 𝐒𝐚𝐭𝐮 𝐊𝐚𝐥𝐢 𝐋𝐢𝐚𝐭
 ║𝐌𝐢𝐧𝐢𝐦 𝐔𝐦𝐮𝐫 16
 ║𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐁𝐞𝐫 𝐄𝐭𝐢𝐤𝐚
@@ -42,7 +42,7 @@ let handler = async (m, { conn }) => conn.send2ButtonLoc(m.chat, await (await fe
 ║𝐉𝐀𝐍𝐆𝐀𝐍 𝐋𝐔𝐏𝐀 𝐁𝐀𝐍𝐓𝐔 𝐒𝐇𝐀𝐑𝐄
 ╚═════════════════════
 
-`.trim(), wm, 'Owner', '.owner', 'Menu', '.menu')
+`.trim(), wm, '🔖 OWNER 🔖', '.owner', '📬 MENU 📬', '.menu')
 handler.help = ['gcbot']
 handler.tags = ['info']
 handler.command = /^gc(bot|groupbot)$/i

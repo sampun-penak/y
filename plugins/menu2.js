@@ -5,63 +5,64 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
 let tags = {
-  'rpgabsen': 'Rpg-Absen',
-  'rpg': 'Rpg',
-  'game': 'Game',
-  'xp': 'Exp, Limit & Pay',
-  'sticker': 'Sticker',
-  'main': 'Main',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
-  'admin': 'Admin',
-  'group': 'Group',
-  'internet': 'Internet',
-  'anonymous': 'Anonymous Chat',
-  'downloader': 'Downloader',
-  'berita': 'Berita',
-  'tools': 'Tools',
-  'fun': 'Fun',
-  'database': 'Database', 
-  'vote': 'Voting',
-  'absen': 'Absen',
-  'catatan': 'Catatan',
-  'jadian': 'Jadian',
-  'islami': 'Islami',
-  'owner': 'Owner',
-  'advanced': 'Advanced',
-  'info': 'Info',
-  'audio': 'Audio',
-  'maker': 'Maker',
+  'rpgabsen': '📚 𝐌𝐄𝐍𝐔 𝐑𝐏𝐆-𝐀𝐁𝐒𝐄𝐍 📚',
+  'rpg': '🎛 𝐌𝐄𝐍𝐔 𝐑𝐏𝐆 🎛',
+  'game': '🎮 𝐌𝐄𝐍𝐔 𝐆𝐀𝐌𝐄 🎮',
+  'xp': '🥏 𝐌𝐄𝐍𝐔 𝐄𝐗𝐏,𝐋𝐈𝐌𝐈𝐓,𝐏𝐀𝐘 🥏',
+  'sticker': '🪁 𝐌𝐄𝐍𝐔 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 🪁',
+  'main': '🤼‍♂️ 𝐌𝐄𝐍𝐔 𝐌𝐀𝐈𝐍 🤼‍♂️',
+  'kerang': '🥊𝐌𝐄𝐍𝐔 𝐊𝐄𝐑𝐀𝐍𝐆 𝐀𝐉𝐀𝐈𝐁 🥊',
+  'quotes': '🎗 𝐌𝐄𝐍𝐔 𝐐𝐔𝐎𝐓𝐄𝐒 🎗',
+  'admin': '🎹 𝐌𝐄𝐍𝐔 𝐀𝐃𝐌𝐈𝐍 🎹',
+  'group': ' 𝐌𝐄𝐍𝐔 𝐆𝐑𝐎𝐔𝐏 ',
+  'internet': '📡 𝐌𝐄𝐍𝐔 𝐈𝐍𝐓𝐄𝐑𝐍𝐄𝐓 📡',
+  'anonymous': '⌛ 𝐌𝐄𝐍𝐔 𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒 𝐂𝐇𝐀𝐓 ⌛',
+  'downloader': '🦠 𝐌𝐄𝐍𝐔 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 🦠',
+  'berita': '📊 𝐌𝐄𝐍𝐔 𝐁𝐄𝐑𝐈𝐓𝐀 📊',
+  'tools': '💭 𝐌𝐄𝐍𝐔 𝐓𝐎𝐎𝐋𝐒 💭',
+  'fun': '⚓ 𝐌𝐄𝐍𝐔 𝐅𝐔𝐍 ⚓',
+  'database': '🗂 𝐌𝐄𝐍𝐔 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 🗂', 
+  'vote': '🧱 𝐌𝐄𝐍𝐔 𝐕𝐎𝐓𝐈𝐍𝐆 🧱',
+  'absen': '🎙 𝐌𝐄𝐍𝐔 𝐀𝐁𝐒𝐄𝐍 🎙',
+  'catatan': '📝 𝐌𝐄𝐍𝐔 𝐂𝐀𝐓𝐀𝐓𝐀𝐍 📝',
+  'jadian': '👫 𝐌𝐄𝐍𝐔 𝐉𝐀𝐃𝐈𝐀𝐍 👫',
+  'islami': '🕋 𝐌𝐄𝐍𝐔 𝐈𝐒𝐋𝐀𝐌𝐈 🕋',
+  'owner': '🛡 𝐌𝐄𝐍𝐔 𝐎𝐖𝐍𝐄𝐑 🛡',
+  'advanced': '🔱 𝐌𝐄𝐍𝐔 𝐀𝐃𝐕𝐀𝐍𝐂𝐄𝐃 🔱',
+  'info': '🔔 𝐌𝐄𝐍𝐔 𝐈𝐍𝐅𝐎 🔔',
+  'audio': '🔊 𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎 🔊',
+  'maker': '🎴 𝐌𝐄𝐍𝐔 𝐌𝐀𝐊𝐄𝐑 🎴',
 }
 const defaultMenu = {
   before: `
 ┏─────────────────⬣
 ┆ 𝑯𝒂𝒊, %ucapan %name!👋
 ┗┬──────────────┈ ⳹
-┏┆♠︎ *Limit:* : %limit
-┆┆♠︎ *Level:* : %level
-┆┆♠︎ *XP:* : %exp
+┏┆⬡ *🔖Limit:* : %limit
+┆┆⬡ *📊Level:* : %level
+┆┆⬡ *⏫XP:* : %exp
 ┗┬──────────────┈ ⳹
-┏┤   *𝐊𝐚𝐥𝐞𝐧𝐝𝐞𝐫*
+┏┤   *📅𝐊𝐚𝐥𝐞𝐧𝐝𝐞𝐫*
 ┆┗──────────────┈ ⳹
-┆♠︎ *Hari:* : %week
-┆♠︎ *Tanggal:* : %date
-┆♠︎ *Waktu Wib* : %wib 
-┆♠︎ *Waktu Wita* : %wita 
-┆♠︎ *Waktu Wit* : %wit 
+┆⬡ *🌤Hari:* : %week
+┆⬡ *📉Tanggal:* : %date
+┆⬡ *🕐Waktu Wib* : %wib 
+┆⬡ *🕝Waktu Wita* : %wita 
+┆⬡ *🕙Waktu Wit* : %wit 
 ┗┬──────────────┈ ⳹
-┏┤ *𝐁𝐨𝐭 𝐈𝐧𝐟𝐨*
+┏┤ *🏷𝐁𝐨𝐭 𝐈𝐧𝐟𝐨*
 ┆┗──────────────┈ ⳹
-┆♠︎ *Limit* : Ⓛ 
-┆♠︎ *Premium* : Ⓟ
-┆♠︎ *Uptime:* : %uptime (%muptime)
-┆♠︎ *Run Bot* : heroku
+┆⬡ *🔖Limit* : Ⓛ 
+┆⬡ *📤Premium* : Ⓟ
+┆⬡ *🕦Uptime:* : %uptime (%muptime)
+┆⬡ *🔛Run Bot* : Okteto/heroku
+┆⬡ *📍Ig Owner* : @sampun_penak
 ┗─────────────────⬣
 %readmore`.trimStart(),
   header: '╔═❖〔 %category 〕❖════╗\n┃',
   body: '┃➺ %cmd %islimit %isPremium',
   footer: '┃\n╚══════════❖\n', 
-  after: `*Made by ♡*
+  after: `*Bot By TheBotz-Official*
 *%npmname* | %version
 ${'```%npmdesc```'}
 `,
@@ -166,7 +167,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendButton(m.chat, text.trim(), 'Made with ♡ by ࿐ᴹʳ 𝐉𝐚𝐫𝐨𝐭 𝐎𝐟𝐟𝐜 ࿐', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
+    conn.sendButton(m.chat, text.trim(), 'Made with by ࿐ᴹʳ 𝐓𝐡𝐞𝐁𝐨𝐭𝐳-𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 ࿐', null, [['💰 DONASI BOT 💰', '.donasi'],['🛡 OWNER BOT 🛡', '.owner']], m)
     /*conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', 'Website', '', '', [
       ['Donate', '/donasi'],
       ['Sewa Bot', '/sewa'],

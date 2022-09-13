@@ -36,35 +36,35 @@ let jarot = `
            hydratedFooterText: '📮 Silahkan pilih Command Dibawah ini',
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙂𝙧𝙤𝙪𝙥 𝘽𝙤𝙩🎮',
-               url: 'https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL'
+               displayText: '🎮 𝙂𝙍𝙊𝙐𝙋 𝘽𝙊𝙏 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋 🎮',
+               url: 'https://chat.whatsapp.com/EJik1WvMpxeCoCEGAFRqiV'
              }
 
            },
                 {
                urlButton: {
-               displayText: '𝙈𝙮 𝙒𝙚𝙗🔮',
-               url: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ'
+               displayText: '🔮 𝙁𝙊𝙇𝙇𝙊𝙒 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 🔮',
+               url: 'https://instagram.com/sampun_penak'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙎𝙘𝙧𝙞𝙥𝙩',
-               id: '.sc',
+               displayText: '💰 𝘿𝙊𝙉𝘼𝙎𝙄 𝘽𝙊𝙏 💰',
+               id: 'donasi',
              }
              
            },
                {
              quickReplyButton: {
-               displayText: '𝙈𝙚𝙣𝙪',
+               displayText: '🚀 𝙈𝙀𝙉𝙐 𝘽𝙊𝙏 🚀',
                id: '.menu',
              }
              
              },
                {
              quickReplyButton: {
-               displayText: '𝙍𝙪𝙣𝙩𝙞𝙢𝙚',
+               displayText: '🔛 𝙍𝙐𝙉𝙏𝙄𝙈𝙀 𝘽𝙊𝙏 🔛',
                id: '.runtime',
              }
 

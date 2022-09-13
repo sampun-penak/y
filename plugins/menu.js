@@ -5,64 +5,64 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
 let tags = {
-  'rpgabsen': 'Rpg-Absen',
-  'rpg': 'Rpg',
-  'game': 'Game',
-  'xp': 'Exp, Limit & Pay',
-  'sticker': 'Sticker',
-  'main': 'Main',
-  'kerang': 'Kerang Ajaib',
-  'quotes': 'Quotes',
-  'admin': 'Admin',
-  'group': 'Group',
-  'internet': 'Internet',
-  'anonymous': 'Anonymous Chat',
-  'downloader': 'Downloader',
-  'berita': 'Berita',
-  'tools': 'Tools',
-  'fun': 'Fun',
-  'database': 'Database', 
-  'vote': 'Voting',
-  'absen': 'Absen',
-  'catatan': 'Catatan',
-  'jadian': 'Jadian',
-  'islami': 'Islami',
-  'owner': 'Owner',
-  'advanced': 'Advanced',
-  'info': 'Info',
-  'audio': 'Audio',
-  'maker': 'Maker',
+  'rpgabsen': '📚 𝐌𝐄𝐍𝐔 𝐑𝐏𝐆-𝐀𝐁𝐒𝐄𝐍 📚',
+  'rpg': '🎛 𝐌𝐄𝐍𝐔 𝐑𝐏𝐆 🎛',
+  'game': '🎮 𝐌𝐄𝐍𝐔 𝐆𝐀𝐌𝐄 🎮',
+  'xp': '🥏 𝐌𝐄𝐍𝐔 𝐄𝐗𝐏,𝐋𝐈𝐌𝐈𝐓,𝐏𝐀𝐘 🥏',
+  'sticker': '🪁 𝐌𝐄𝐍𝐔 𝐒𝐓𝐈𝐂𝐊𝐄𝐑 🪁',
+  'main': '🤼‍♂️ 𝐌𝐄𝐍𝐔 𝐌𝐀𝐈𝐍 🤼‍♂️',
+  'kerang': '🥊𝐌𝐄𝐍𝐔 𝐊𝐄𝐑𝐀𝐍𝐆 𝐀𝐉𝐀𝐈𝐁 🥊',
+  'quotes': '🎗 𝐌𝐄𝐍𝐔 𝐐𝐔𝐎𝐓𝐄𝐒 🎗',
+  'admin': '🎹 𝐌𝐄𝐍𝐔 𝐀𝐃𝐌𝐈𝐍 🎹',
+  'group': ' 𝐌𝐄𝐍𝐔 𝐆𝐑𝐎𝐔𝐏 ',
+  'internet': '📡 𝐌𝐄𝐍𝐔 𝐈𝐍𝐓𝐄𝐑𝐍𝐄𝐓 📡',
+  'anonymous': '⌛ 𝐌𝐄𝐍𝐔 𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒 𝐂𝐇𝐀𝐓 ⌛',
+  'downloader': '🦠 𝐌𝐄𝐍𝐔 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 🦠',
+  'berita': '📊 𝐌𝐄𝐍𝐔 𝐁𝐄𝐑𝐈𝐓𝐀 📊',
+  'tools': '💭 𝐌𝐄𝐍𝐔 𝐓𝐎𝐎𝐋𝐒 💭',
+  'fun': '⚓ 𝐌𝐄𝐍𝐔 𝐅𝐔𝐍 ⚓',
+  'database': '🗂 𝐌𝐄𝐍𝐔 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 🗂', 
+  'vote': '🧱 𝐌𝐄𝐍𝐔 𝐕𝐎𝐓𝐈𝐍𝐆 🧱',
+  'absen': '🎙 𝐌𝐄𝐍𝐔 𝐀𝐁𝐒𝐄𝐍 🎙',
+  'catatan': '📝 𝐌𝐄𝐍𝐔 𝐂𝐀𝐓𝐀𝐓𝐀𝐍 📝',
+  'jadian': '👫 𝐌𝐄𝐍𝐔 𝐉𝐀𝐃𝐈𝐀𝐍 👫',
+  'islami': '🕋 𝐌𝐄𝐍𝐔 𝐈𝐒𝐋𝐀𝐌𝐈 🕋',
+  'owner': '🛡 𝐌𝐄𝐍𝐔 𝐎𝐖𝐍𝐄𝐑 🛡',
+  'advanced': '🔱 𝐌𝐄𝐍𝐔 𝐀𝐃𝐕𝐀𝐍𝐂𝐄𝐃 🔱',
+  'info': '🔔 𝐌𝐄𝐍𝐔 𝐈𝐍𝐅𝐎 🔔',
+  'audio': '🔊 𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎 🔊',
+  'maker': '🎴 𝐌𝐄𝐍𝐔 𝐌𝐀𝐊𝐄𝐑 🎴',
 }
 const defaultMenu = {
   before: `
 ┏─────────────────⬣
 ┆ 𝑯𝒂𝒊, %ucapan %name!👋
 ┗┬──────────────┈ ⳹
-┏┆⬡ *Limit:* : %limit
-┆┆⬡ *Level:* : %level
-┆┆⬡ *XP:* : %exp
+┏┆⬡ *🔖Limit:* : %limit
+┆┆⬡ *📊Level:* : %level
+┆┆⬡ *⏫XP:* : %exp
 ┗┬──────────────┈ ⳹
-┏┤   *𝐊𝐚𝐥𝐞𝐧𝐝𝐞𝐫*
+┏┤   *📅𝐊𝐚𝐥𝐞𝐧𝐝𝐞𝐫*
 ┆┗──────────────┈ ⳹
-┆⬡ *Hari:* : %week
-┆⬡ *Tanggal:* : %date
-┆⬡ *Waktu Wib* : %wib 
-┆⬡ *Waktu Wita* : %wita 
-┆⬡ *Waktu Wit* : %wit 
+┆⬡ *🌤Hari:* : %week
+┆⬡ *📉Tanggal:* : %date
+┆⬡ *🕐Waktu Wib* : %wib 
+┆⬡ *🕝Waktu Wita* : %wita 
+┆⬡ *🕙Waktu Wit* : %wit 
 ┗┬──────────────┈ ⳹
-┏┤ *𝐁𝐨𝐭 𝐈𝐧𝐟𝐨*
+┏┤ *🏷𝐁𝐨𝐭 𝐈𝐧𝐟𝐨*
 ┆┗──────────────┈ ⳹
-┆⬡ *Limit* : Ⓛ 
-┆⬡ *Premium* : Ⓟ
-┆⬡ *Uptime:* : %uptime (%muptime)
-┆⬡ *Run Bot* : Okteto/heroku
-┆⬡ *Ig Owner* : instagram.com/oscarbotz_
+┆⬡ *🔖Limit* : Ⓛ 
+┆⬡ *📤Premium* : Ⓟ
+┆⬡ *🕦Uptime:* : %uptime (%muptime)
+┆⬡ *🔛Run Bot* : Okteto/heroku
+┆⬡ *📍Ig Owner* : @sampun_penak
 ┗─────────────────⬣
 %readmore`.trimStart(),
   header: '╭─❑ 〔 %category 〕 ❑─\n┃',
   body: '┃❑ %cmd %islimit %isPremium',
   footer: '┃\n╰────────❑\n', 
-  after: `*Made by ♡*
+  after: `*Bot By TheBotz-Official*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -165,12 +165,12 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    /*conn.sendHydrated(m.chat, `${global.anu}`, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', 'Website🌟', '', '', [
-      ['Donate🌟', '/donasi'],
-      ['Sewa Bot🌟', '/sewa'],
-      ['Owner🌟', '/owner']
+    /*conn.sendHydrated(m.chat, `${global.anu}`, text.trim(), 'TheBotz | Official', null, 'https://instagram.com/sampun_penak', '🌟 INSTAGRAM 🌟', '', '', [
+      [', 💰DONASI 💰', '/donasi'],
+      ['💳 SEWA BOT 💳', '/sewa'],
+      ['🛡 OWNER 🛡', '/owner']
     ], m)*/
-    let url = `https://telegra.ph/file/054b6fe59958df5ad6b1f.jpg`.trim()
+    let url = `https://telegra.ph/file/ea3959a6bcd824932283c.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
     let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -179,31 +179,31 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: text.trim(),
-                            hydratedFooterText:'                『 𝑱𝑨𝑹𝑶𝑻 𝑶𝑭𝑭𝑪 』',
+                            hydratedFooterText:'                『 𝐓𝐇𝐄𝐁𝐎𝐓𝐙-𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 』',
                             hydratedButtons: [{
                               urlButton: {
-                                    displayText: '𝙂𝙧𝙤𝙪𝙥 🌏',
-                                    url: 'https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL'
+                                    displayText: '🌏 𝙂𝙍𝙊𝙐𝙋 𝘽𝙊𝙏 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋 🌏',
+                                    url: 'https://chat.whatsapp.com/EJik1WvMpxeCoCEGAFRqiV'
                                 }
                                 
                             }, {
                               urlButton: {
-                                    displayText: '𝙔𝙤𝙪𝙏𝙪𝙗𝙚 📺',
-                                    url: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ'
+                                    displayText: '📺 𝙁𝙊𝙇𝙇𝙊𝙒 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 📺',
+                                    url: 'https://instagram.com/sampun_penak'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝘿𝙤𝙣𝙖𝙨𝙞 🔄',
+                                    displayText: '🔄 𝘿𝙊𝙉𝘼𝙎𝙄 𝘽𝙊𝙏 🔄',
                                     id: '/donasi'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝙎𝙚𝙬𝙖 🏧',
+                                    displayText: '🏧 𝙎𝙀𝙒𝘼 𝘽𝙊𝙏 🏧',
                                     id: '/sewa'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝙊𝙬𝙣𝙚𝙧 🌟',
+                                    displayText: '🛡 𝙊𝙒𝙉𝙀𝙍 𝘽𝙊𝙏 🛡',
                                     id: '/owner'
                                 }
                             }]

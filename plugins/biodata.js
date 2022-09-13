@@ -3,11 +3,11 @@ let fs = require('fs')
 let handler = async (m) => {
 let jarot = `
 •·––––––––––––––––––––––––––·•
-❑ *Nama* : Jarot
-❑ *Umur* : 18 Tahun
+❑ *Nama* : Mimim
+❑ *Umur* : 19 Tahun
 ❑ *Kelas* : Lulus
-❑ *Ulang Tahun* : 30 Januari 2004
-❑ *Alamat* : AS, AS, Pelabuhan
+❑ *Ulang Tahun* : 26 April 2003
+❑ *Alamat* : Indonesia, Jawa Tengah, Demak
 •·––––––––––––––––––––––––––·•
 	`.trim()
   let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya7)).buffer()}, { upload: conn.waUploadToServer }) 
@@ -16,38 +16,38 @@ let jarot = `
             hydratedTemplate: {
                 hydratedContentText: jarot,
                 imageMessage: message.imageMessage, 
-           hydratedFooterText: 'salam kenal bang👋',
+           hydratedFooterText: 'Salam Kenal Bang👋',
            hydratedButtons: [{
              urlButton: {
-               displayText: '𝙂𝙧𝙤𝙪𝙥 𝘽𝙤𝙩 𝙊𝙛𝙛𝙘 🐈',
-               url: 'https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL'
+               displayText: '🐈 𝙂𝙍𝙐𝙋 𝘽𝙊𝙏 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋 🐈',
+               url: 'https://chat.whatsapp.com/EJik1WvMpxeCoCEGAFRqiV'
              }
 
            },
                 {
                urlButton: {
-               displayText: '𝙇𝙞𝙣𝙠 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 🌍',
-               url: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ'
+               displayText: '🌍 𝙁𝙊𝙇𝙇𝙊𝙒 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 🌍',
+               url: 'https://instagram.com/sampun_penak'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙎𝙚𝙬𝙖 𝘽𝙤𝙩 🏧',
+               displayText: '🏧 𝙎𝙀𝙒𝘼 𝘽𝙊𝙏 🏧',
                id: '.sewa',
              }
              
            },
                {
              quickReplyButton: {
-               displayText: '𝙈𝙚𝙣𝙪 ⛽',
+               displayText: '⛽ 𝙈𝙀𝙉𝙐 𝘽𝙊𝙏 ⛽',
                id: '.menu',
              }
              
              },
                {
              quickReplyButton: {
-               displayText: '𝘿𝙤𝙣𝙖𝙨𝙞 𝘽𝙖𝙣𝙝 📮',
+               displayText: '📮 𝘿𝙊𝙉𝘼𝙎𝙄 𝘽𝙊𝙏 📮',
                id: '.donasi',
              }
 

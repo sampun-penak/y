@@ -13,7 +13,7 @@ let handler = async (m, { conn }) => {
 ├❑ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
 ╰────────────···
     `.trim()
-conn.send2But(m.chat, str, wm, 'Sewa', '.sewa', 'Owner', '.owner',m)
+conn.send2But(m.chat, str, wm, '💳 SEWA BOT 💳', '.sewa', '🛡 OWNER BOT 🛡', '.owner',m)
 conn.reply(str)
 }
 handler.help = ['botstatus']

@@ -7,17 +7,17 @@ let gopay = global.gopay
 let numberowner = global.numberowner
 let anu = `Hallo mypren 👋
 *MAAF KAK FITUR JADIBOT TIDAK ADA DI DALAM FITUR KAMI*
-⟩» *Kalau kakak mau jadi bot silahkan jasa run aja kak*
+⟩» *Kalau kakak mau jadi bot silahkan jasa sewa aja kak*
           
 ━━━〔 ıll *HARGA* llı 〕━━ꕥ
 ⬡ *1 minggu:* 15.000
 ⬡ *3 minggu:* 25.000
-⬡ *Tutorial Jadibot:* 50.000
+⬡ *1 Bulan:* 50.000
 ┗━━━━━━━━━━━━━━━━━━ꕥ
 ┏━━━〔 ıll *PAYMENT* llı 〕━━ꕥ
-⬡ *DANA:* ${6285850539404}
-⬡ *GOPAY:* ${6285850539404}
-⬡ *Youtube:* ${'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ'}
+⬡ *DANA:* ${6283816446896}
+⬡ *GOPAY:* ${6283816446896}
+⬡ *Facebook:* ${'https://facebook.com/sampun.penak'}
 ┗━━━━━━━━━━━━━━━━━━ꕥ
 ┏━━〔 ıll *RULES* llı 〕━ꕥ
 ⬡ [❗] *Dana yang sudah masuk tidak bisa di kembalikan*
@@ -27,11 +27,11 @@ Jika anda berminat hubungi nomor di bawah!!
 ⟩» *jangan lupa donasi kak* «⟨
 Terimakasih yang sudah mendonasikan untuk bot
 
-Contact person jasa run:
-wa.me/${'6281376349712'} (Owner)
+Contact person jasa sewa:
+wa.me/${'6283816446896'} (Owner)
 
 *Follow Instagram ku juga kak😼*`
-  conn.send2ButtonImg(m.chat, fla + teks, anu, instagram, 'Donasi', '.donasi', 'SewaBot', '.sewaoscar', m) 
+  conn.send2ButtonImg(m.chat, fla + teks, anu, instagram, '💰 DONASI 💰', '.donasi', '💳 SEWABOT 💳', '.sewa', m) 
 }
 handler.help = ['jadibot']
 handler.tags = ['info']

@@ -83,8 +83,8 @@ let loveyou = lovou[Math.floor(Math.random() * lovou.length)]
     let isAss = ass.exec(m.text)
     let assal = [
 '🥰',
-'😇',
-'😅'
+'😚',
+'🤗'
 ]
 let assl = assal[Math.floor(Math.random() * assal.length)]
     if (isAss && !m.fromMe) {
@@ -107,8 +107,8 @@ let assl = assal[Math.floor(Math.random() * assal.length)]
     let isAih = hiai.exec(m.text)
     let hiain = [
 '🥰',
-'😇',
-'😅'
+'🤗',
+'😚'
 ]
 let hiaine = hiain[Math.floor(Math.random() * hiain.length)]
     if (isAih && !m.fromMe) {

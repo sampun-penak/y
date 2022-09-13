@@ -1,6 +1,6 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fs = require('fs')
-let owner = 6285850539404
+let owner = 6283816446896
 let wa = '0'
 let handler = async (m) => {
 let jarot = `
@@ -12,38 +12,38 @@ let jarot = `
             hydratedTemplate: {
                 hydratedContentText: jarot,
                 imageMessage: message.imageMessage, 
-           hydratedFooterText: '📮Note : HALO KAK SAYA OSCARBOTZ, JIKA KAMU MENGGUNAKAN WA LAMA ATAU WA MOD, DAN BUTTON TIDAK KELIATAN, LANGSUNG AJA KETIK .allmenu',
+           hydratedFooterText: '📮Note : HALO KAK SAYA THEBOTZ, JIKA KAMU MENGGUNAKAN WA LAMA ATAU WA MOD, DAN BUTTON TIDAK KELIATAN, LANGSUNG AJA KETIK .allmenu',
            hydratedButtons: [{
              urlButton: {
-               displayText: '🔮𝙂𝙧𝙤𝙪𝙥𝘽𝙤𝙩🔮',
-               url: 'https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL'
+               displayText: '🔮 𝙂𝙍𝙊𝙐𝙋 𝘽𝙊𝙏 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋🔮',
+               url: 'https://chat.whatsapp.com/EJik1WvMpxeCoCEGAFRqiV'
              }
 
            },
                 {
                urlButton: {
-               displayText: '🐻𝙔𝙤𝙪𝙩𝙪𝙗𝙚 𝘾𝙧𝙚𝙖𝙩𝙤𝙧🐻',
-               url: 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ'
+               displayText: '🐻 𝙄𝙉𝙎𝙏𝘼𝙂𝙍𝘼𝙈 𝘾𝙍𝙀𝘼𝙏𝙊𝙍 🐻',
+               url: 'https://instagram.com/sampun_penak'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: '𝙎𝙚𝙬𝙖🚀',
-               id: '.sewabot',
+               displayText: '🚀 𝙎𝙀𝙒𝘼 𝘽𝙊𝙏 🚀',
+               id: '.sewa',
              }
              
            },
                {
              quickReplyButton: {
-               displayText: '𝙎𝙘𝙧𝙞𝙥𝙩🎗️',
-               id: '.sc',
+               displayText: '🔖 𝘿𝙊𝙉𝘼𝙎𝙄 𝘽𝙊𝙏 🔖️',
+               id: '.donasi',
              }
              
              },
                {
              quickReplyButton: {
-               displayText: '𝙇𝙞𝙨𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙📖',
+               displayText: '📖 𝙎𝙀𝙈𝙐𝘼 𝙋𝙀𝙍𝙄𝙉𝙏𝘼𝙃 📖',
                id: '.allmenu',
              }
 
