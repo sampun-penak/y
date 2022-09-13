@@ -1,4 +1,4 @@
-//console.log('Starting to run oscar-md...')
+//console.log('Starting to run thebotz-md...')
 const moment = require("moment-timezone")
 const time = moment.tz('Asia/Jakarta').format("HH:mm:ss")
 let cluster = require('cluster')
@@ -234,7 +234,7 @@ console.log(color(tampilTanggal, "pink"));
 console.log(color(tampilWaktu, "pink"));
 console.log(color(tampilHari, "pink"));
 
-CFonts.say('Lightweight\nWhatsApp Aine Bot', {
+CFonts.say('Lightweight\nWhatsApp The Bot', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta']

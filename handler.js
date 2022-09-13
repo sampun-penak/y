@@ -988,7 +988,7 @@ global.dfail = (type, m, conn) => {
         mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
         premium: '*Premium*\n1 Months *IDR 10000*\n1 Years *IDR 90000*\n\nHubungi *owner* kami..', 
         banned: 'Perintah ini hanya untuk pengguna yang terbanned..',
-        created: 'Perintah ini hanya pengguna yang sudah membuat base\nContoh: #createbase Aine',
+        created: 'Perintah ini hanya pengguna yang sudah membuat base\nContoh: #createbase Mimim',
         group: 'Perintah ini hanya dapat digunakan di grup!',
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: 'Perintah ini hanya untuk *Admin* grup!',

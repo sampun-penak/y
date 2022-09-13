@@ -1,7 +1,7 @@
 {
-    "name": "Oscar-Bot",
+    "name": "TheBotz-Ofc",
     "version": "07.06.98",
-    "description": "Customizable WhatsApp Bot",
+    "description": "Official Botz WhatsApp",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -27,16 +27,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/Alpiii22",
+    "homepage": "https://github.com/sampun-penak",
     "author": {
-        "name": "Muhammad Jarot"
+        "name": "Mimim Ofc"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Alpiii22"
+        "url": "git+https://github.com/sampun-penak"
     },
     "bugs": {
-        "url": "https://github.com/Alpiii22"
+        "url": "https://github.com/sampun-penak"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {

@@ -21,7 +21,7 @@ yarn
 
 echo ":::::::::::::::::::::::::::::::::"
 echo ":::::::::::::::::::::::::::::::::"
-echo ":::::         Oscar          :::::"
+echo ":::::         Mimim          :::::"
 echo ":::::                       :::::"
 echo ":::::   :::::      :::::    :::::"
 echo ":::::   :::::      :::::    :::::"
@@ -32,6 +32,6 @@ echo ":::::                       :::::"
 echo ":::::::::::::::::::::::::::::::::"
 echo ":::::::::::::::::::::::::::::::::"
 echo "[*] JANGAN DISHARE, DI SHARE REPO INI AKAN DI HAPUS !!"
-echo "[*] Made by Muhammad Jarot"
+echo "[*] Made by Mimim Ofc"
 echo "[*] All dependencies have been installed, please run the command \"npm start\" to immediately start the script"
 npm start
